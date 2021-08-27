@@ -1,9 +1,10 @@
 // 手牌栏
 
 import 'package:chudadi_fclient/puke_card.dart';
+import 'package:chudadi_fclient/card_model.dart';
 import 'package:flutter/material.dart';
 
-List<Widget> renderHandCards() {
+List<Widget> renderCards() {
   return [
     PukeCard(suit: suits.clover, number: 2),
     PukeCard(suit: suits.clover, number: 4),
@@ -26,7 +27,7 @@ class _PukeCardsState extends State<PukeCards> {
     return Wrap(
       spacing: -48,
       alignment: WrapAlignment.center,
-      children: renderHandCards(),
+      children: renderCards(),
     );
   }
 }
